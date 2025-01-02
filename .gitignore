@@ -1,0 +1,96 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environment variables files
+.env
+*.env
+
+# Django stuff:
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# Media and static files
+/media/
+/staticfiles/
+
+# Local virtual environments
+venv/
+env/
+*.virtualenv
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyCharm project files
+.idea/
+*.iml
+
+# VSCode project files
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+htmlcov/
+*.cover
+*.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# pytest
+.pytest_cache/
+
+# Mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pipenv
+Pipfile
+Pipfile.lock
+
+# Docker
+*.stackdump
+docker-compose.override.yml
+
+# Gunicorn
+gunicorn.log
+gunicorn.error.log
+
+# Celery
+celerybeat-schedule
+*.pid
+
+# Other
+*.sublime-workspace
+*.sublime-project
