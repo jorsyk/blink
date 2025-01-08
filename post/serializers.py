@@ -3,7 +3,9 @@ from .models import Post
 
 
 class PostSerializer(serializers.ModelSerializer):
-    """Сериализатор модели поста"""
+    """
+    Сериализатор модели поста
+    """
 
     class Meta:
         model = Post

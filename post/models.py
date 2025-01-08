@@ -4,7 +4,9 @@ from user.models import User
 
 
 class Post(models.Model):
-    """Модель поста соцсети"""
+    """
+    Модель поста соцсети
+    """
 
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
     content = models.TextField()
@@ -13,7 +15,9 @@ class Post(models.Model):
 
 
 class Like(models.Model):
-    """Модель лайков на посте в соцсети"""
+    """
+    Модель лайков на посте в соцсети
+    """
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)

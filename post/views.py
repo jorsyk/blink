@@ -1,15 +1,15 @@
-from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.generics import ListCreateAPIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from .models import Post
 from .serializers import PostSerializer
-from .services import get_post_by_id, toggle_like
+from .services import get_all_posts, get_post_by_id, toggle_like
 
 
 class PostListCreateView(ListCreateAPIView):
-    """Список всех постов"""
+    """
+    Список всех постов
+    """
     serializer_class = PostSerializer
 
     def get_queryset(self):
@@ -17,7 +17,9 @@ class PostListCreateView(ListCreateAPIView):
 
 
 class LikePostView(APIView):
-    """Добаление лайка на пост"""
+    """
+    Добаление лайка на пост
+    """
 
     permission_classes = [IsAuthenticated]
 
