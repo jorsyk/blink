@@ -1,6 +1,13 @@
 from .repositories import PostRepository, LikeRepository
 
 
+def get_all_posts():
+    """
+    Получит все посты
+    """
+    return PostRepository.get_all()
+
+
 def get_post_by_id(post_id):
     """
     Получить пост по его ID.

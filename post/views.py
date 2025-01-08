@@ -10,9 +10,10 @@ from .services import get_post_by_id, toggle_like
 
 class PostListCreateView(ListCreateAPIView):
     """Список всех постов"""
-
-    queryset = Post.objects.all()
     serializer_class = PostSerializer
+
+    def get_queryset(self):
+        return get_all_posts()
 
 
 class LikePostView(APIView):
